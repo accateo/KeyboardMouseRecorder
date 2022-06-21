@@ -44,3 +44,12 @@ where you can see:
 - the number of actions performed in total
 - the pixel resolution of the screen from which we recorded
 - the list of actions performed
+
+For the mouse we have:
+- the point in X and Y pixel coordinates
+- the type of action (movement, click and double click)
+- the timestamp of the action
+For the keyboard we have:
+- VK Code, ScanCode and Flag of the pressed key
+- timestamp of the action 
+For further information about code -> https://docs.microsoft.com/en-us/windows/win32/inputdev/user-input
