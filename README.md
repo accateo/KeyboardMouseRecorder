@@ -51,6 +51,7 @@ For the mouse we have:
 - the point in X and Y pixel coordinates
 - the type of action (movement, click and double click)
 - the timestamp of the action
+
 For the keyboard we have:
 - VK Code, ScanCode and Flag of the pressed key
 - timestamp of the action 
