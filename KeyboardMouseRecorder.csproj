@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>KeyboardMouseRecorder</AssemblyName>
+    <RootNamespace>KeyboardMouseRecorder</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\save_icon.png" />
+    <None Remove="sfondo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\save_icon.png" />
+    <Resource Include="images\sfondo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="RecWindow.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
