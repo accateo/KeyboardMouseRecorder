@@ -43,7 +43,7 @@ namespace KeyboardMouseRecorder
         {
             this.name = rec_name;
             //creo file json della registrazione
-            System.IO.FileInfo file = new System.IO.FileInfo("C:\\CustomFolder\\Single\\" + rec_name + ".json");
+            System.IO.FileInfo file = new System.IO.FileInfo("C:\\CustomFolder\\" + rec_name + ".json");
             
             file.Directory.Create(); // If the directory already exists, this method does nothing.
             System.IO.File.WriteAllText(file.FullName, "");
