@@ -23,16 +23,16 @@ namespace KeyboardMouseRecorder
             InitializeComponent();
             if (File.Exists(configFilePath))
             {
-                //leggo ip del server da file di configurazione
+                //leggo da file di configurazione
                 JObject data = JObject.Parse(File.ReadAllText(configFilePath));
                 windowShowState = (Int32.Parse(data["progressWindow"].ToString()) == 0 ? false : true);
                 if (windowShowState)
                     progressCheckbox.IsChecked = true;
             }
-            if (!File.Exists("C:\\CustomFolder\\Single\\"))
+            if (!File.Exists("C:\\CustomFolder\\"))
             {
 
-                Directory.CreateDirectory("C:\\CustomFolder\\Single\\");
+                Directory.CreateDirectory("C:\\CustomFolder\\");
             }
             WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             window_istance = this;
