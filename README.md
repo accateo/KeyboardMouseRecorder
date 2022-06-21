@@ -7,3 +7,40 @@ This application allows you to record the actions performed by the user via mous
 At start-up, a name and description of the "Registration" phase are requested. Once started, a red window will appear at the bottom right containing the shortcut to execute to stop recording.
 
 The recordings are saved on disk C, inside a folder called "CustomFolder". Recordings are saved in JSON format with this structure:
+
+{
+  "nomeFile": "test",
+  "descrizione": "test",
+  "startTimestamp": 1655836170939,
+  "endTimestamp": 1655836174394,
+  "totalTimestamp": 3455,
+  "numeroAzioni": 2,
+  "risX": 1600.0,
+  "risY": 900.0,
+  "actionsList": [
+    {
+      "wParam": 512,
+      "mouseX": 623,
+      "mouseY": 387,
+      "mouseCode": 0,
+      "type": "mouse",
+      "actionUnixTime": 1655836171916
+    },
+    {
+      "keyboardVK": "70",
+      "keyboardScancode": "33",
+      "keyboardFlags": "128",
+      "type": "keyboard",
+      "actionUnixTime": 1655836173045
+    }
+  ],
+  "type": "FileJson"
+}
+
+where you can see:
+- the name and the description of the file
+- the start and end timestamp of the recording 
+- the total duration in milliseconds of the recording
+- the number of actions performed in total
+- the pixel resolution of the screen from which we recorded
+- the list of actions performed
